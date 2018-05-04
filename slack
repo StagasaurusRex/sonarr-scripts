@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -X POST --data-urlencode "payload={\"username\": \"Sonarr\", \"icon_url\": \"https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-15/299271922498_6f097056a0b0834caf07_48.png\",\"channel\":\"#media\", \"text\": \"$sonarr_eventtype: $sonarr_series_title S$sonarr_episodefile_seasonnumber E$sonarr_episodefile_episodenumbers ($sonarr_episodefile_quality)\"}" $1
