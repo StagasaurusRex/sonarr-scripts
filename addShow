@@ -1,0 +1,3 @@
+#!/bin/bash
+touch show_buffer.txt
+echo "$sonarr_eventtype: $sonarr_series_title S$sonarr_episodefile_seasonnumber E$sonarr_episodefile_episodenumbers ($sonarr_episodefile_quality)" >> show_buffer.txt

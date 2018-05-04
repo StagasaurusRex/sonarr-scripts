@@ -1,0 +1,3 @@
+#!/usr/local/bin/bash
+message=$(<show_buffer.txt)
+curl -X POST --data-urlencode "payload={\"username\": \"Sonarr\", \"icon_url\": \"https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-15/299271922498_6f097056a0b0834caf07_48.png\",\"channel\":\"#media\", \"text\": \"$message\"}" $1
